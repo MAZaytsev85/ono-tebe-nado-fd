@@ -5,7 +5,6 @@
 	display: grid;
 	grid-template-columns: 1fr min-content 1fr;
 	align-items:center;
-	min-height: 293px;
 	padding: 0 50px;
 }
 
@@ -13,6 +12,8 @@
 	display: block;
 	width: 148px;
 	height: 105px;
+	margin-top: 92px;
+	margin-bottom: 96px;
 }
 
 .header__logo-image {
@@ -60,7 +61,6 @@
 	background-image: url(../images/cover.jpg);
 	background-size: cover;
 	background-position: center;
-	z-index: -1;
 	margin-bottom: 180px;
 	padding: 165px 50px 50px;
 }
@@ -132,7 +132,8 @@
 
 .bet-button {
 	width: 255px;
-	height: 50px;
+	padding-bottom: 11px;
+	padding-top: 12px;
 	border: 1px solid #FFF;
 	background: transparent;
 	font-weight: 500;
@@ -148,7 +149,6 @@
 	display: flex;
 	flex-wrap: wrap;
 	width: 1052px;
-	min-height: 723px;
 	margin: 0 auto 120px;
 }
 
@@ -181,9 +181,9 @@
 
 .card {
 	position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	height: 100%;
 	z-index: 0;
 	background-size: cover;
@@ -234,7 +234,6 @@
 /* ***Верстка блока ABOUT*** */
 .about {
 	width: 1052px;
-	min-height: 595px;
 	margin: 0 auto 180px;
 	display: grid;
 	grid-template-columns: 333px auto;
@@ -257,7 +256,8 @@
 
 .about__column {
 	width: 693px;
-	margin: 135px 0 -10px auto;
+	margin-top: 135px;
+	padding-left: 26px;
 }
 
 .about__title {
@@ -270,6 +270,7 @@
 
 .about__text {
 	display: flex;
+	width: 688px;
 	flex-direction: column;
 	gap: 24px;
 	font-weight: 400;
@@ -277,13 +278,9 @@
 	line-height: 120%;
 }
 
-.about__text p:first-child {
-	width: 688px;
-}
 
 /* ***Стилизация блока FOOTER*** */
 .footer {
-	min-height: 180px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	padding-left: 50px;
@@ -292,6 +289,10 @@
 
 .footer .address {
 	width: 265px;
+}
+
+.footer__menu {
+	margin-bottom: 115px;
 }
 
 .footer__menu-list {
